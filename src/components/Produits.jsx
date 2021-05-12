@@ -122,39 +122,15 @@ const Produits = () => {
         }}
       >
         {produits.cds.map((cd) => {
-          const {
-            id,
-            img,
-            titre,
-            auteur,
-            classement,
-            nbEtoiles,
-            nbCommentaires,
-          } = cd;
+          const { id } = cd;
           return <Cd key={id} cd={cd} />;
         })}
         {produits.dvds.map((dvd) => {
-          const {
-            id,
-            img,
-            titre,
-            auteur,
-            classement,
-            nbEtoiles,
-            nbCommentaires,
-          } = dvd;
+          const { id } = dvd;
           return <Dvd key={id} dvd={dvd} />;
         })}
         {produits.livres.map((livre) => {
-          const {
-            id,
-            img,
-            titre,
-            auteur,
-            classement,
-            nbEtoiles,
-            nbCommentaires,
-          } = livre;
+          const { id } = livre;
           return <Livre key={id} livre={livre} />;
         })}
       </section>
